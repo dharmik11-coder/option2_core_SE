@@ -1,5 +1,4 @@
- # option2_core_SE
-  **Optimal Solution** for finding the longest strand of bytes that is identical between two or more files from a large set of binary files.
+**"Optimal Solution"** for finding the longest strand of bytes that is identical between two or more files from a large set of binary files.
 
 **Input** : A list of 10 given sample binary files.
 
@@ -8,7 +7,7 @@
         - the file names where the largest strand appears
         - the offset where the strand appears in each file  
 
-#   Approach :: 
+## Approach 
 [Similar to k-common substring problem with minor modification]
 
 **Step#1** : Preprocessing input 
@@ -35,10 +34,10 @@
 - the file names where the largest strand appears
 - the offset where the strand appears in each file
 
-# Performance ::
+## Performance 
 **Run-Time Complexity : O(N)** ; N = Σ n(i) where i=1,2,3,...10  & n(i) = length of string in sample file
 
 **Space Complexity : O(n)** ; n=len(concatenated hex string)
 
-# Files:
+## Files:
 **main.py** is the main driver file that imports **suffix_tree.py** and uses **/sample_files/** for input files.
