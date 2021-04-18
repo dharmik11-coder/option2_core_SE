@@ -1,0 +1,6 @@
+Run "main.py" for input "sample_files" and it will give you output as below:
+
+Longest identical strand of bytes found =  01b2cdb229d7110e80518755b030c1144f7741f053fb809b4aa291277ac1.......
+Length of this strand =  55297 units
+Strand found  at offset =  6143 in file sample.2
+Strand found  at offset =  34815 in file sample.3
