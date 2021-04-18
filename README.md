@@ -1,14 +1,15 @@
  # option2_core_SE
   **Optimal Solution** for finding the longest strand of bytes that is identical between two or more files from a large set of binary files.
 
-Input : A list of 10 given sample binary files.
+**Input** : A list of 10 given sample binary files.
 
-Output : Longest common substring(strand of bytes) that appears in at least two files.
+**Output** : Longest common substring(strand of bytes) that appears in at least two files.
         - the length of the strand
         - the file names where the largest strand appears
         - the offset where the strand appears in each file  
 
-Approach :: [Similar to k-common substring problem with minor modification]
+#   Approach :: 
+[Similar to k-common substring problem with minor modification]
 
 **Step#1** : Preprocessing input 
 - Reading the binary files as strings of hexadecimal values and storing them into a dictonary with key = filename and value = hex strings for each files. 
@@ -28,8 +29,7 @@ Approach :: [Similar to k-common substring problem with minor modification]
 - Class Node and Class SuffixTree in suffix_tree.py (ref: https://www.youtube.com/watch?v=5dgheXY8IZ0&t=69s)
 - A function(identical_strand) that returns the identical longest strand, list of indexes, list of offsets of bytes for identical sub-strings in hex list 
       
-**Step#4** : Display Output
-Using the preprocessed hex list in **main.py** as input for **suffix_tree.py** will return
+**Step#4** : Display output using the preprocessed hex list in **main.py** as input for **suffix_tree.py** will return
 - the longest common substring(strand of bytes) that appears in at least two files.
 - the length of the strand
 - the file names where the largest strand appears
@@ -41,4 +41,4 @@ Using the preprocessed hex list in **main.py** as input for **suffix_tree.py** w
 **Space Complexity : O(n)** ; n=len(concatenated hex string)
 
 # Files:
-main.py is the main driver file that imports suffix_tree.py and uses /sample_files/ for input files.
+**main.py** is the main driver file that imports **suffix_tree.py** and uses **/sample_files/** for input files.
